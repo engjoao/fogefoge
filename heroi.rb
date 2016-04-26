@@ -15,6 +15,22 @@ class Heroi
 	    novo_heroi
 	end
 
+	def direita
+		calcula_nova_direcao "D"
+	end
+
+	def esquerda
+		calcula_nova_direcao "A"
+	end
+
+	def cima
+		calcula_nova_direcao "W"
+	end
+
+	def baixo
+		calcula_nova_direcao "S"
+	end
+
 	def to_array
 		[linha, coluna]
 	end
